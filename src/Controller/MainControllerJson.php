@@ -11,14 +11,16 @@ class MainControllerJson
     #[Route("/api/quote", name: "quote")]
     public function quote(): Response
     {
-        $number = random_int(0, 3);
+        $number = random_int(0, 6);
 
         $quoteList = [
             'This is a quoute',
             'This is not a quote',
             'There is no real blue sky',
             'Quotes are for noobs',
-            'Nothing is impossible, unless you cant do it'
+            'Nothing is impossible, unless you cant do it',
+            'Quoute this, quote that, what do YOU have to say?',
+            'Praise the sun!'
         ];
 
         $data = [
