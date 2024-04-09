@@ -18,19 +18,20 @@
         <header class="site-header" style="background-image: url({{ asset('img/background.jpg') }})">
         </header>
 
-        <nav>
-            <ul>
-                <li><a href="{{ path('main') }}">Main</a></li>
-                <li><a href="{{ path('about') }}">About</a></li>
-                <li><a href="{{ path('report') }}">report</a></li>
-                <li><a href="{{ path('api') }}">Json Api</a></li>
-            </ul>
+        <nav class="robonav">
+            <a href="{{ path('main') }}">Main</a>
+            <a href="{{ path('about') }}">About</a>
+            <a href="{{ path('report') }}">report</a>
+            <a href="{{ path('api') }}">Json Api</a>
+            <a href="{{ path('lucky') }}">Lucky</a>
         </nav>
 
         <main>
             {% block body %}{% endblock %}
         </main>
 
-        <footer></footer>
+        <footer class="robofooter">
+            <p>Here be a footer and some text<p>
+        </footer>
     </body>
 </html>
